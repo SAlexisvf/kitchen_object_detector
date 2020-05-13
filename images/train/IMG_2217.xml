@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>IMG_2217.jpg</filename>
+	<path>/Users/alexis/Documents/kitchen_object_detection/images/train/IMG_2217.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>danup</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>236</xmin>
+			<ymin>254</ymin>
+			<xmax>295</xmax>
+			<ymax>392</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,26 @@
+<annotation>
+	<folder>train</folder>
+	<filename>IMG_2073.jpg</filename>
+	<path>/Users/alexis/Documents/kitchen_object_detection/images/train/IMG_2073.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>600</width>
+		<height>800</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>coca_cola</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>274</xmin>
+			<ymin>385</ymin>
+			<xmax>339</xmax>
+			<ymax>504</ymax>
+		</bndbox>
+	</object>
+</annotation>
