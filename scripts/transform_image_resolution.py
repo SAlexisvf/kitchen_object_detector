@@ -13,6 +13,7 @@ def rescale_images(directory, size):
     for img in os.listdir(directory):
         im = Image.open(directory+img)
         im_resized = im.resize(size, Image.ANTIALIAS)
+        im_resized = im_resized.transpose(Image.ROTATE_270)
         im_resized.save(directory+img)
 
 if __name__ == '__main__':
