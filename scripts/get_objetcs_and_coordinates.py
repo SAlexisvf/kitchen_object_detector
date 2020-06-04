@@ -2,17 +2,17 @@
 This script test the trained model and performs object detection on a given image, the script prints
 in console a JSON with the objects detected and their info.
 E.g. 
->>> python get_objects_and_coordinates.py -i /home/roborregos/Documents/Robocup-Home/object_detection/test_images/image4.jpg -o /home/roborregos/Documents/ -v true
+>>> python get_objects_and_coordinates.py -i ../images/test_model/IMG_2362.jpg -o some_folder/ -v true
 output:
 {
-    "jumex_cajita": {
+    "jugo_jumex": {
         "score": 0.9995954632759094,
         "ymin": 435.3594779968262,
         "xmin": 185.599547624588,
         "ymax": 547.5826263427734,
         "xmax": 248.1843888759613
     },
-    "fanta": {
+    "coca_cola": {
         "score": 0.9212740063667297,
         "ymin": 314.3073320388794,
         "xmin": 328.5956025123596,
@@ -137,6 +137,10 @@ if __name__ == '__main__':
     # Write JSON results to a txt file
     with open(os.path.join(args.output_directory,'detected_objects.txt'),'w') as outfile:
         json.dump(detected_objects, outfile)
+
+    # Print results on terminal too
+    print('Results')
+    print(json.dumps(detected_objects, indent=4))
 
     if (args.image_view == 'true'):
         display_image_results()
